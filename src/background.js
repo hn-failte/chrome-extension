@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log(request.payload.message);
     // Send a response message
     sendResponse({
-      message
+      message,
     });
   }
 });

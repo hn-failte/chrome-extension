@@ -22,10 +22,10 @@ chrome.runtime.sendMessage(
   {
     type: "GREETINGS",
     payload: {
-      message: "Hello, my name is Con. I am from ContentScript."
-    }
+      message: "Hello, my name is Con. I am from ContentScript.",
+    },
   },
-  response => {
+  (response) => {
     console.log(response.message);
   }
 );
